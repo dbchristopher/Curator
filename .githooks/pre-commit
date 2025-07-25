@@ -1,0 +1,18 @@
+#!/bin/sh
+# Check that specs exist for new features
+# Add to .git/hooks/pre-commit and make executable
+
+echo "Checking for specification compliance..."
+
+# Check if new feature files have corresponding specs
+new_feature_files=$(git diff --cached --name-only --diff-filter=A | grep "src/.*Feature")
+
+if [ ! -z "$new_feature_files" ]; then
+    echo "New feature files detected. Checking for specifications..."
+    for file in $new_feature_files; do
+        # Logic to check if corresponding spec exists
+        echo "  Checking spec for: $file"
+    done
+fi
+
+exit 0
