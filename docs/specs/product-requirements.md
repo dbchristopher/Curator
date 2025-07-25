@@ -1,7 +1,7 @@
 # Product Requirements Document
 
 **Document Version:** 1.0  
-**Last Updated:** [Date]  
+**Last Updated:** July 25, 2025  
 **Status:** Draft
 
 ## Vision Statement
@@ -16,7 +16,8 @@ Create an iOS app that makes photo organization easy, fun, and fast through intu
 - **Pain Points:**
   - Too many duplicate/blurry photos
   - Can't find specific photos quickly
-  - Organizing feels overwhelming and time-consuming
+  - Organizing photos into albums feels overwhelming and time-consuming
+  - Junk photos taking up too much space on my phone and iCloud
 - **Goals:** Clean, organized photo library without spending hours sorting
 
 ### Secondary Persona: The Memory Keeper
@@ -50,6 +51,8 @@ Create an iOS app that makes photo organization easy, fun, and fast through intu
 - [ ] Basic search and filtering
 - [ ] Export favorites to new album
 - [ ] Progress tracking and statistics
+- [ ] Filtering photoset down to a specific album rather than going through entire roll
+- [ ] When organizing a single album, swipe left can be Remove From Album instead of Trash
 
 ### Could Have
 
@@ -142,9 +145,6 @@ Create an iOS app that makes photo organization easy, fun, and fast through intu
 
 ---
 
-**Next Steps:**
+## Architecture
 
-1. Validate assumptions with user interviews
-2. Create technical architecture specification
-3. Design core swipe interaction wireframes
-4. Plan MVP development phases
+- Read [Technical Achitecture Docs](./technical-architecture.md) for implementation details
